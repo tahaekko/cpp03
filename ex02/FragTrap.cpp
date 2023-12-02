@@ -45,7 +45,7 @@ void	FragTrap::attack(const std::string target)
 		return ;
 	}
 	this->energyPoints--;
-	std::cout << "FragTrap" << this->name << " attacks, ";
+	std::cout << "FragTrap " << this->name << " attacks, ";
 	std::cout << target << " causing " << this->AttackDamage << " points of damage!\n";
 	std::cout << "Energie : " << this->energyPoints << std::endl;
 }

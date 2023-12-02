@@ -60,10 +60,11 @@ void	ClapTrap::takeDamage(unsigned int amount)
 		std::cout << "WA BARAKA 2IKHAN\n";
 		return ;
 	}
-	this->HitPoints -= amount;
 	if ((int)(this->HitPoints - amount) < 0)
 		this->HitPoints = 0;
-	std::cout << "ClapTrap " << this->name << " takes " << amount << " of damage turning his healt to " << this->HitPoints <<std::endl;
+	else
+		this->HitPoints -= amount;
+	std::cout << this->name << " takes " << amount << " of damage turning his healt to " << this->HitPoints <<std::endl;
 }
 
 void	ClapTrap::beRepaired(unsigned int amount)

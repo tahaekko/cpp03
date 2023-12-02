@@ -1,12 +1,13 @@
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 #include "unistd.h"
 
 int main()
 {
-	ScavTrap scav("Skikiv");
-	scav.attack("50");
-	scav.beRepaired(40);
+	FragTrap scav("🦦");
+	scav.attack("🦀");
 	scav.takeDamage(10);
-	scav.guardGate();
+	scav.beRepaired(40);
+	scav.highFivesGuys();
 }
