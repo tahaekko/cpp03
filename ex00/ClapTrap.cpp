@@ -8,6 +8,7 @@ void	noMoreEnergie(std::string str, std::string name)
 ClapTrap::ClapTrap()
 {
 	std::cout << "Default constructor Called\n";
+	this->name = "default";
 	this->HitPoints = 10;
 	this->energyPoints = 10;
 	this->AttackDamage = 0;
